@@ -15,6 +15,7 @@ public class Lv1_8 {
         System.out.println(total);
 
 
+
     }
 
 }
