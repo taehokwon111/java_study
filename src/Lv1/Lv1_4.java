@@ -10,14 +10,14 @@ public class Lv1_4 {
         int casecount = sc.nextInt();
         int [] count = new int[casecount];
         int r = -1;
-        boolean errer = false;
+        boolean error = false;
 
         for (int j = 1; j <= casecount; j++){
 
 
                 count[j - 1] = sc.nextInt();
             if(count[j-1] < 10000 && count[j-1] > 0){
-                errer = true;
+                error = true;
                 System.out.println("제약사항에 맞지않음");
                 break;
             }

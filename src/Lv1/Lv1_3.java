@@ -10,7 +10,7 @@ public class Lv1_3 {
         int [] total = new int[casecount+1];
         int [] arr = new int[10];
         int max = 0;
-        boolean errer = false;
+        boolean error = false;
 
         for (int j = 1; j <= casecount; j++){
             max = 0;
@@ -20,7 +20,7 @@ public class Lv1_3 {
 
                 arr[i] = sc.nextInt();
                 if(arr[i] < 10000 && arr[i] > 0){
-                    errer = true;
+                    error = true;
                     System.out.println("제약사항에 맞지않음");
                     break;
                 }
@@ -35,7 +35,7 @@ public class Lv1_3 {
 
         }
         for (int i = 1; i <= casecount; i++){
-            if (errer == true){
+            if (error == true){
                 break;
             }
             System.out.println("#"+i+" "+total[i]);
