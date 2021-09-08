@@ -2,15 +2,18 @@ package Lv1;
 
 import java.util.Scanner;
 
-public class Lv1_9 {
+public class Lv1_9{
 
     public static void main(String [] args){
+
         Scanner sc = new Scanner(System.in);
 
         int count = sc.nextInt();
+        int total = 1;
+        for (int i = 1; i <= count; i++){
+            total = total * 2;
+            System.out.print(total+" ");
 
-        for (int i = count; i >= 1; i--){
-            System.out.print(i+" ");
         }
 
 

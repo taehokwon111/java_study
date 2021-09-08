@@ -7,13 +7,14 @@ public class Lv1_5 {
     public static void main(String [] args){
 
         Scanner sc = new Scanner(System.in);
-        String count = sc.next();
+        int count = sc.nextInt();
 
-        for (int i = 0; i < count.length(); i++){
-            char memory = count.charAt(i);
-            System.out.print(((int)memory - 64)+ " ");
+        for (int i = 1; i <= count; i++){
+            if(count % i == 0) {
+                System.out.print(i + " ");
+            }
         }
-
+       
     }
 
 }

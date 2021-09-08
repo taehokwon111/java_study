@@ -6,13 +6,21 @@ public class Lv1_7 {
 
     public static void main(String [] args){
         Scanner sc = new Scanner(System.in);
+        int casecount = sc.nextInt();
+        int [][] input = new int[casecount][2];
 
-        int count = sc.nextInt();
-        int total = 0;
-        for (int i = 1; i <= count; i++){
-            total = total + i;
+        for (int i = 0; i < casecount; i++){
+            for (int k = 0; k < 2; k++){
+                input[i][k] = sc.nextInt();
+            }
         }
-        System.out.println(total);
+
+        for (int j = 1; j <= casecount; j++){
+                System.out.println("#" + j + " " + (input[j-1][0] / input[j-1][1]) + " " + (input[j-1][0] % input[j-1][1]));
+
+        }
+
+
 
 
     }
