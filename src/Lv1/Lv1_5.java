@@ -9,11 +9,11 @@ public class Lv1_5 {
         Scanner sc = new Scanner(System.in);
         String count = sc.next();
 
-        for (int i = 0; i <= count.length(); i++){
-            char memory = count.charAt(count.length(i));
-            
+        for (int i = 0; i < count.length(); i++){
+            char memory = count.charAt(i);
+            System.out.print(((int)memory - 64)+ " ");
         }
-       
+
     }
 
 }
