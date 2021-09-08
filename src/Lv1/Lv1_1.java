@@ -26,7 +26,6 @@ public class Lv1_1 {
             System.out.println("#"+i+" "+total[i]);
         }
 
-
     }
 
 }
