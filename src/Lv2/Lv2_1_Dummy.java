@@ -13,11 +13,9 @@ public class Lv2_1_Dummy {
         int count = sc.nextInt();
         int [] rendarr = new int[count];
         double max = 0;
-        double Variance = -7.105427357601002E-15;
 
 
-        System.out.println("");
-        System.out.println(form.format(Variance));
+
 
 
 
