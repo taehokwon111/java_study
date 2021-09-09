@@ -10,19 +10,24 @@ public class Lv3_2 {
         Scanner sc = new Scanner(System.in);
         int life = sc.nextInt();
         String [] tetes = new String[life];
-
+        String [] YnN = new String[life];
 
         for (int i = 0; i < life; i++) {
             tetes[i] = sc.next();
+            YnN[i] = "No";
         }
 
-        for (int c = 0; c < life; c++) {
-
-            for (int k = 1; k < 10; k++) {
-
-
+        for (int i = 0; i < life; i++) {
+            int max = 0;
+            for (int j = 1; j < 4; j++){
+                if (tetes[i].charAt(0) == tetes[i].charAt(j) && max == 0){
+                    max = max + 1;
+                }else if(max == 1){
+                    YnN[i] = "Yes";
+                    max = max + 1;
+                }
             }
-            System.out.println("#"+(c+1)+tetes[c]);
+            System.out.println(tetes[i] +" / "+ YnN[i]);
         }
 
     }
