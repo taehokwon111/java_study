@@ -11,9 +11,9 @@ public class Lv2_2 {
         Random rd = new Random();
         Scanner sc = new Scanner(System.in);
         int count = sc.nextInt();
-        int[] rand = new int[count];
+        int[] rand = new int[count+2];
         int[] randcheck = new int[count];
-        int[] dasd = new int[count];
+        int[] dasd = new int[count+2];
         int cou = 0;
         int coun = 0;
 
@@ -49,7 +49,7 @@ public class Lv2_2 {
 
                         for (int w = rand.length; fiv < 6; w--) {
 
-                            System.out.println("# " + fiv + " " + rand[w]);
+                            System.out.println("# " + fiv + " " + rand[w-2]);
                             fiv++;
                         }
                     }
