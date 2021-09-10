@@ -16,7 +16,7 @@ public class Lv2_5 {
             for (int j = 0; j<i; j++){
                 System.out.print((j+1)+" ");
             }
-            System.out.println("");
+            System.out.println("fuck.............");
         }
         
         for (int i = n-1; i > 0; i--){
