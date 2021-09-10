@@ -1,9 +1,8 @@
 package Lv2;
 
-import java.util.Random;
 import java.util.Scanner;
 
-public class Lv2_3 {
+public class Lv2_3_1 {
     
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
