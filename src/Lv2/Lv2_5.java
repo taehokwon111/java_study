@@ -10,12 +10,25 @@ public class Lv2_5 {
         int n = sc.nextInt();
 
         for (int i = 1; i <= n; i++){
+            for (int k = 0; k < (n-i); k++){
+                System.out.print(" ");
+            }
             for (int j = 0; j<i; j++){
-                System.out.print(i);
+                System.out.print((j+1)+" ");
             }
             System.out.println("");
         }
-
+        
+        for (int i = n-1; i > 0; i--){
+            for (int w = 1; w <= n-i; w++){
+                System.out.print(" ");
+            }
+            for (int j = 0; j<i; j++){
+                System.out.print((j+1)+" ");
+            }
+            
+            System.out.println("");
+        }
     }
 
 }
